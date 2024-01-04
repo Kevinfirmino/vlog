@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-soothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+
+}
+
+main {
+    max-width: 382px;
+    margin-inline: auto;
+    padding: auto 439px;
+}
+
+#h-botao {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+header {
+    background-color: #065E7C;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#pata {
+    width: 24px;
+    height: 20;
+    border-radius: 100%;
+}
+#txtBusca {
+    display: flex;
+width: 1083px;
+padding: 12px 16px 12px 14px;
+align-items: center;
+gap: 12px;
+flex-shrink: 0;
+}
+
+
+button {
+    background-color: #065E7C;
+    border: 0;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin: 12px;
+
+}
+
+#botao-gostei {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+
+footer {
+   
+    background-color: #387E96;
+    display: flex;
+    height: 64px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+#autoral {
+    color: #fff;
+}
+
+
+
+@media ( min-width: 770px) {
+
+   main {
+    flex-direction: row;
+    max-width: 100%;
+
+   }
+
+   main > div {
+    flex: 1;
+    max-width: 50rem;
+   }
+   
+}
